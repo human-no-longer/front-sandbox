@@ -1,0 +1,34 @@
+body {
+  background-color: #f4f4f4;
+}
+
+.color-grid {
+  display: flex;
+  gap: 1rem;
+}
+
+.color-box {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+}
+
+.color1 {
+  background-color: #f3e324;
+}
+
+.color2 {
+  background-color: rgb(35, 240, 120);
+}
+
+.color3 {
+  background-color: thistle;
+}
+
+.color4 {
+  background-color: hsl(271, 67%, 45%);
+}
+
+.color5 {
+  background-color: hsla(200, 100%, 50%, 0.5);
+}

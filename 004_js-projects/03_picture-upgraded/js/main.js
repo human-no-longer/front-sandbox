@@ -1,0 +1,25 @@
+import { initAccordions } from './accordion.js';
+import { initBurgerMenu } from './burger.js';
+import { initCalc } from './calc.js';
+import { initJsonCardsLoader } from './cards-from-server-loader.js';
+import { initCardsLoader } from './cards-loader.js';
+import { initDragAndDropFiles } from './drag-n-drop-file.js';
+import { initForms } from './forms.js';
+import { initImageReplacer } from './image-replacer.js';
+import { initModals } from './modals.js';
+import { initPortfolioFilter } from './portfolio-filter.js';
+import { initSliders } from './sliders.js';
+import { initSmoothScroll } from './smooth-scroll.js';
+
+initModals();
+initSliders();
+initForms();
+initCardsLoader();
+initJsonCardsLoader();
+initCalc();
+initPortfolioFilter();
+initImageReplacer();
+initAccordions();
+initBurgerMenu();
+initSmoothScroll();
+initDragAndDropFiles();

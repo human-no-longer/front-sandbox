@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    const url = 'http://forums.warriorsworld.net/main/news'
+
+    const parseURL = (url) => {
+      const [protocol, _, domen, ...path] = url.split('/')
+      if (protocol === 'http:' || protocol === 'https:') {
+        console.log(`protocol: ${protocol.slice(0, -1)}`)
+        console.log(`domen: ${domen}`)
+        console.log(`path: /${path.join('/')}/`)
+      } else {
+        console.log('получилась каша, ивините😥')
+      }
+    }
+
+    parseURL(url)
+
+  </script>
+</head>
+
+<body>
+
+
+</body>
+
+</html>

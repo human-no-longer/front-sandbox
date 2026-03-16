@@ -1,0 +1,48 @@
+body {
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  background-color: black;
+}
+img {
+  max-width: 100%;
+}
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+.grid-container {
+  margin-inline: auto;
+  width: 980px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  /* grid-template-rows: repeat(4, auto); */
+  grid-template-areas:
+    'a a'
+    'b c'
+    'b d'
+    'e e';
+  gap: 1rem;
+  outline: 1px dashed white;
+}
+
+img:nth-child(1) {
+  grid-area: a;
+}
+
+img:nth-child(2) {
+  grid-area: b;
+}
+
+img:nth-child(3) {
+  grid-area: e;
+}
+
+img:nth-child(4) {
+  grid-area: c;
+}
+
+img:nth-child(5) {
+  grid-area: d;
+}

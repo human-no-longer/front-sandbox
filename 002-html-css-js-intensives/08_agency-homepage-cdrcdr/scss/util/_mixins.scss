@@ -1,0 +1,6 @@
+@mixin underline-text($height: 2px, $offset: 8px) {
+  text-decoration: underline;
+  text-underline-offset: $offset;
+  text-decoration-thickness: $height;
+  text-decoration-color: var(--color-green);
+}

@@ -1,0 +1,21 @@
+body {
+  max-width: 600px;
+  outline: 1px solid blue;
+}
+
+figure {
+  padding: 8px;
+  border: 1px solid;
+  margin-bottom: 32px;
+  /* using min-content to turn the figure into a wrapper card */
+  width: min-content;
+}
+
+figure img {
+  margin-bottom: 8px;
+}
+
+figcaption {
+  text-align: center;
+  color: #666666;
+}

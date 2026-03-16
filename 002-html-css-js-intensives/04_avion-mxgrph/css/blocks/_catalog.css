@@ -1,0 +1,30 @@
+.catalog {
+  padding-block: 36px;
+}
+
+.catalog__column_left {
+  padding-top: 12px;
+  grid-column: span 3;
+}
+
+.catalog__column_right {
+  grid-column: span 9;
+}
+
+.catalog__list {
+  --column-gap: 20px;
+  --elems: 3;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: var(--column-gap);
+  row-gap: 36px;
+}
+
+.catalog__item {
+  /* width: calc((100% - (3 - 1) * 20px) / 3); */
+  width: calc((100% - ((var(--elems) - 1) * var(--column-gap))) / var(--elems));
+}
+
+.catalog__btn {
+  margin-inline: auto;
+}

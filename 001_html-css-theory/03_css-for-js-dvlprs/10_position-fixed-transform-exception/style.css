@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+}
+
+/* body {
+  max-width: 600px;
+  outline: 1px solid blue;
+} */
+
+.container {
+  margin: 50px;
+  height: 200px;
+  border: solid hotpink;
+  will-change: transform;
+}
+
+.container-1 {
+  margin: 50px;
+  height: 200px;
+  border: solid forestgreen;
+  transform: translateX(-1px);
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+}
+
+html,
+body {
+  height: 125%;
+}

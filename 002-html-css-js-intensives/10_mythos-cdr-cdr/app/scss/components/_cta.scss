@@ -1,0 +1,28 @@
+@use "../util/" as u;
+
+.cta {
+  text-align: center;
+  color: var(--text-light);
+  background-image: var(--cta-bg);
+}
+
+.cta-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cta-title {
+  margin-block-end: u.rem(20);
+}
+
+.cta-btn {
+  color: var(--button-cta-text);
+  background-color: var(--button-cta-bg);
+  border: 2px solid var(--button-cta-border);
+
+  &:hover {
+    color: var(--button-cta-text-hover);
+    background-color: var(--button-cta-bg-hover);
+  }
+}

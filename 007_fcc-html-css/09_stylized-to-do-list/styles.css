@@ -1,0 +1,54 @@
+body {
+  background-color: azure;
+}
+
+h1 {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link {
+  color: hsl(227, 100%, 50%);
+}
+
+a:visited {
+  color: hsl(280, 100%, 50%);
+}
+
+a:hover {
+  color: hsl(227, 100%, 80%);
+}
+
+a:focus {
+  outline: 2px solid hsl(240, 93%, 33%);
+}
+
+a:active {
+  color: orangered;
+}
+
+.todo-list {
+  max-width: 300px;
+  margin-inline: auto;
+  padding: 2rem;
+  list-style: none;
+  background-color: bisque;
+}
+
+.todo-list>li {
+  margin-block: 0.5rem;
+  padding: 1rem;
+  font-size: 18px;
+  font-weight: 700;
+  background-color: hsl(82, 45%, 71%);
+}
+
+.sub-item-link {
+  font-size: 16px;
+  font-weight: 400;
+  list-style-type: square;
+  list-style-position: inside;
+}

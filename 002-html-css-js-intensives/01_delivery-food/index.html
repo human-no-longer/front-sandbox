@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Delivery Food</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/destyle.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <a class="header__logo logo">
+          <img src="img/logo.svg" alt="Лого сайта" class="logo__img" width="100" height="36">
+        </a>
+        <form action="index.html" method="het" class="header__form address-form">
+          <input type="text" class="address-form__input input" placeholder="Адрес доставки">
+        </form>
+        <div class="header__buttons">
+          <button class="header__sign-in btn btn_dark">
+            <img src="img/sign-in.svg" alt="" class="btn__icon" aria-hidden="true">
+            <span>Войти</span>
+          </button>
+          <button class="header__to-cart btn btn_light">
+            <img src="img/cart.svg" alt="" class="btn__icon" aria-hidden="true">
+            <span>Корзина</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="content">
+    <section class="hero">
+      <div class="container">
+        <div class="hero__banner">
+          <h1 class="hero__title">Онлайн-сервис доставки еды на&nbsp;дом</h1>
+          <p class="hero__descr">Блюда из&nbsp;любимого ресторана привезет курьер в&nbsp;перчатках, маске и&nbsp;с&nbsp;антисептиком</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cards">
+      <div class="container">
+        <header class="cards__header">
+          <h2 class="cards__title">Рестораны</h2>
+          <form action="index.html" method="get" class="cards__form search-form">
+            <input type="text" class="search-form__input input" placeholder="Поиск блюд и&nbsp;ресторанов">
+          </form>
+        </header>
+        <ul class="cards__list">
+          <li class="cards__item">
+            <article class="card">
+              <img src="img/meal-1.jpg" alt="Фирменное блюдо" class="card__img" width="384" height="250">
+              <a class="card__info" href="single.html">
+                <div class="card__top">
+                  <h3 class="card__title">Пицца плюс</h3>
+                  <span class="card__delivery-time">50 мин</span>
+                </div>
+                <div class="card__details">
+                  <div class="card__rating">
+                    <span>4.5</span>
+                  </div>
+                  <div class="card__text">
+                    <span class="card__price">От&nbsp;900&nbsp;&#8381;</span>
+                    <span class="card__tag">Пицца</span>
+                  </div>
+                </div>
+              </a>
+            </article>
+          </li>
+          <li class="cards__item">
+            <article class="card">
+              <img src="img/meal-2.jpg" alt="Фирменное блюдо" class="card__img" width="384" height="250">
+              <a class="card__info" href="single.html">
+                <div class="card__top">
+                  <h3 class="card__title">Тануки</h3>
+                  <span class="card__delivery-time">50 мин</span>
+                </div>
+                <div class="card__details">
+                  <div class="card__rating">
+                    <span>4.5</span>
+                  </div>
+                  <div class="card__text">
+                    <span class="card__price">От&nbsp;900&nbsp;&#8381;</span>
+                    <span class="card__tag">Пицца</span>
+                  </div>
+                </div>
+              </a>
+            </article>
+          </li>
+          <li class="cards__item">
+            <article class="card">
+              <img src="img/meal-3.jpg" alt="Фирменное блюдо" class="card__img" width="384" height="250">
+              <a class="card__info" href="single.html">
+                <div class="card__top">
+                  <h3 class="card__title">FoodBand</h3>
+                  <span class="card__delivery-time">50 мин</span>
+                </div>
+                <div class="card__details">
+                  <div class="card__rating">
+                    <span>4.5</span>
+                  </div>
+                  <div class="card__text">
+                    <span class="card__price">От&nbsp;900&nbsp;&#8381;</span>
+                    <span class="card__tag">Пицца</span>
+                  </div>
+                </div>
+              </a>
+            </article>
+          </li>
+          <li class="cards__item">
+            <article class="card">
+              <img src="img/meal-4.jpg" alt="Фирменное блюдо" class="card__img" width="384" height="250">
+              <a class="card__info" href="single.html">
+                <div class="card__top">
+                  <h3 class="card__title">Жадина-пицца</h3>
+                  <span class="card__delivery-time">50 мин</span>
+                </div>
+                <div class="card__details">
+                  <div class="card__rating">
+                    <span>4.5</span>
+                  </div>
+                  <div class="card__text">
+                    <span class="card__price">От&nbsp;900&nbsp;&#8381;</span>
+                    <span class="card__tag">Пицца</span>
+                  </div>
+                </div>
+              </a>
+            </article>
+          </li>
+          <li class="cards__item">
+            <article class="card">
+              <img src="img/meal-5.jpg" alt="Фирменное блюдо" class="card__img" width="384" height="250">
+              <a class="card__info" href="single.html">
+                <div class="card__top">
+                  <h3 class="card__title">Точка еды</h3>
+                  <span class="card__delivery-time">50 мин</span>
+                </div>
+                <div class="card__details">
+                  <div class="card__rating">
+                    <span>4.5</span>
+                  </div>
+                  <div class="card__text">
+                    <span class="card__price">От&nbsp;900&nbsp;&#8381;</span>
+                    <span class="card__tag">Пицца</span>
+                  </div>
+                </div>
+              </a>
+            </article>
+          </li>
+          <li class="cards__item">
+            <article class="card">
+              <img src="img/meal-6.jpg" alt="Фирменное блюдо" class="card__img" width="384" height="250">
+              <a class="card__info" href="single.html">
+                <div class="card__top">
+                  <h3 class="card__title">PizzBurger</h3>
+                  <span class="card__delivery-time">50 мин</span>
+                </div>
+                <div class="card__details">
+                  <div class="card__rating">
+                    <span>4.5</span>
+                  </div>
+                  <div class="card__text">
+                    <span class="card__price">От&nbsp;900&nbsp;&#8381;</span>
+                    <span class="card__tag">Пицца</span>
+                  </div>
+                </div>
+              </a>
+            </article>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <a class="footer__logo logo">
+          <img src="img/logo.svg" alt="Лого сайта" class="logo__img" width="100" height="36">
+        </a>
+        <nav class="footer__nav nav">
+          <ul class="nav__list">
+            <li class="nav__item"><a href="#" class="nav__link">Ресторанам</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Курьерам</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Пресс-центр</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
+          </ul>
+        </nav>
+        <ul class="footer__social social">
+          <li class="social__item">
+            <a href="#" class="social__link social__link_ig">
+              <img src="img/insta-social.svg" alt="Ig icon" class="social__link-img" width="26" height="26">
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link social__link_fb">
+              <img src="img/fb-social.svg" alt="Fb icon" class="social__link-img" width="26" height="26">
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link social__link_vk">
+              <img src="img/vk-social.svg" alt="VK icon" class="social__link-img" width="36" height="21">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </footer>
+  <div class="modal" data-modal>
+    <div class="modal__dialog">
+      <header class="modal__header">
+        <h2 class="modal__title">Корзина</h2>
+        <button class="modal__close-btn" aria-label="Close the modal window">
+          <img src="img\close.svg" alt="Close button icon" class="modal__close-btn-icon" aria-hidden="true">
+        </button>
+      </header>
+      <ul class="modal__list">
+        <li class="modal__item">
+          <span class="modal__item-name">Ролл угорь стандарт</span>
+          <span class="modal__item-price">250&#8381;</span>
+          <div class="modal__item-stepper">
+            <div class="stepper">
+              <button class="stepper__btn stepper__btn_minus" aria-label="Decrease quantity">-</button>
+              <input type="number" min="1" max="999" value="1" class="stepper__input">
+              <button class="stepper__btn stepper__btn_plus" aria-label="Increase quantity">+</button>
+            </div>
+          </div>
+        </li>
+        <li class="modal__item">
+          <span class="modal__item-name">Ролл угорь стандарт</span>
+          <span class="modal__item-price">250&#8381;</span>
+          <div class="modal__item-stepper">
+            <div class="stepper">
+              <button class="stepper__btn stepper__btn_minus" aria-label="Decrease quantity">-</button>
+              <input type="number" min="1" max="999" value="1" class="stepper__input">
+              <button class="stepper__btn stepper__btn_plus" aria-label="Increase quantity">+</button>
+            </div>
+          </div>
+        </li>
+        <li class="modal__item">
+          <span class="modal__item-name">Ролл угорь стандарт</span>
+          <span class="modal__item-price">250&#8381;</span>
+          <div class="modal__item-stepper">
+            <div class="stepper">
+              <button class="stepper__btn stepper__btn_minus" aria-label="Decrease quantity">-</button>
+              <input type="number" min="1" max="999" value="1" class="stepper__input">
+              <button class="stepper__btn stepper__btn_plus" aria-label="Increase quantity">+</button>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <footer class="modal__footer">
+        <span class="modal__total-price">1250&#8381;</span>
+        <div class="modal__buttons">
+          <button class="modal__btn btn btn_dark">Оформить заказ</button>
+          <button class="modal__btn btn btn_light">Отмена</button>
+        </div>
+      </footer>
+    </div>
+  </div>
+</body>
+
+</html>

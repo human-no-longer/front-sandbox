@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/app.js" defer></script>
+</head>
+
+<body>
+  <div class="app">
+    <aside class="panel">
+      <img class="panel__logo" src="images/logo.svg" alt="Логотип приложения Habbit">
+      <nav class="panel__nav menu">
+        <ul class="menu__list list-reset">
+          <!-- <li class="menu__item">
+            <button class="menu__button menu__button_active btn-reset" data-menu-habbit-id="1">
+              <img src="images/fitness.svg" alt="Fitness">
+            </button>
+          </li>
+         -->
+        </ul>
+      </nav>
+      <button class="menu__add btn-reset" onclick="togglePopup()">
+        <img src="images/add.svg" alt="Add">
+      </button>
+    </aside>
+    <section class="content">
+      <header class="header">
+        <h1 class="header__title">-</h1>
+        <div class="progress">
+          <div class="progress__text">
+            <span class="progress__text-name">Прогресс</span>
+            <span class="progress__text-percent">%</span>
+          </div>
+          <div class="progress__bar">
+            <div class="progress__bar-cover"></div>
+          </div>
+        </div>
+      </header>
+      <main>
+        <section class="habbits">
+          <ul class="habbits__list list-reset">
+            <!-- <li class="habbits__item">
+            <div class="habbits__item-day">День 1</div>
+            <div class="habbits__item-desc">
+              <p class="habbits__item-text">Первый подход всегда даётся тяжело</p>
+              <button class="habbits__item-delete btn-reset">
+                <img src="images/bucket.svg" alt="Delete item">
+              </button>
+            </div>
+          </li> -->
+          </ul>
+          <div class="habbits__item habbits__item--form">
+            <div class="habbits__item-day">День&nbsp;<span class="habbits__new-day-number"></span></div>
+            <div class="habbits__item-desc">
+              <form class="habbits__form" onsubmit="addNewDay(event)">
+                <input name="comment" type="text" class="habbits__input" placeholder="Комментарий">
+                <button class="habbits__form-btn btn-reset">Готово</button>
+              </form>
+            </div>
+          </div>
+        </section>
+      </main>
+    </section>
+    <div class="cover cover_hidden">
+      <div class="popup">
+        <h2 class="popup__title">Новая привычка</h2>
+        <div class="icon-label">Иконка</div>
+        <div class="icon-select">
+          <button class="icon icon_active" onclick="setIcon(this,'sport')">
+            <img src="images/sport.svg" alt="Спорт" />
+          </button>
+          <button class="icon" onclick="setIcon(this,'water')">
+            <img src="images/water.svg" alt="Напитки" />
+          </button>
+          <button class="icon" onclick="setIcon(this,'food')">
+            <img src="images/food.svg" alt="Еда" />
+          </button>
+        </div>
+        <form class="popup__form" onsubmit="addNewHabbit(event)">
+          <input type="text" name="name" placeholder="Название" />
+          <input type="text" name="icon" placeholder="Иконка" value="sport" hidden />
+          <input type="number" name="target" placeholder="Цель (количество дней)" />
+          <button class="button btn-reset" type="submit">Добавить</button>
+        </form>
+        <button class="popup__close" onclick="togglePopup()">
+          <img src="images/close.svg" alt="Закрыть попап" />
+        </button>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

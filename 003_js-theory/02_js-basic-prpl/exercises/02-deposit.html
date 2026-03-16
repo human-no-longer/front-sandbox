@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    const deposit = 12000
+    const ratePerYear = 7
+    const houseCost = 13500
+    const depositTime = 24
+    const result = deposit * (1 + 7 / 100 / 12) ** depositTime
+
+    const template1 = `Денег хватило, еще и осталось ${result - houseCost}`
+    const template2 = `Денег не хватило - не судьба, чувак`
+
+    if (result >= houseCost) {
+      console.log(template1)
+    } else {
+      console.log(template2)
+    }
+
+  </script>
+</head>
+
+<body>
+
+
+</body>
+
+</html>

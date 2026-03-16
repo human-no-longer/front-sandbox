@@ -1,0 +1,47 @@
+@use "../util/" as u;
+
+.header {
+  background-color: var(--header-bg);
+}
+
+.header-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding-block: u.rem(12);
+
+  @include u.breakpoint(large) {
+    padding-block: u.rem(20);
+  }
+}
+
+.main-nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  @include u.list-reset;
+  @include u.breakpoint(large) {
+    gap: 40px;
+  }
+}
+
+.main-nav-link {
+  font-size: u.rem(14);
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--text-light);
+
+  &:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
+  }
+
+  @include u.breakpoint(large) {
+    font-size: u.rem(16);
+  }
+}

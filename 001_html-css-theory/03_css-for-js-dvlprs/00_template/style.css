@@ -1,0 +1,8 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 600px;
+  outline: 1px solid blue;
+}

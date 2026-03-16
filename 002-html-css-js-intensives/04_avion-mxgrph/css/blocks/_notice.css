@@ -1,0 +1,33 @@
+.notice {
+  position: relative;
+  padding: 10px 16px;
+  height: 41px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  background-color: var(--dark-primary);
+}
+
+.notice_hidden {
+  display: none;
+}
+
+.notice__text {
+  font-size: 14px;
+  color: var(--white);
+}
+
+.notice__close {
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.notice__close svg {
+  pointer-events: none;
+}

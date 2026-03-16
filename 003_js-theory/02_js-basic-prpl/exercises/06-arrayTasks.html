@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    const tasks = ['Задача 1', 'Задача 2']
+
+    const addTaskToTheEnd = (task) => {
+      tasks.push(task)
+    }
+
+
+    const deleteTaskByName = (task) => {
+      const indexToDelete = tasks.indexOf(task)
+      if (indexToDelete === -1) {
+        return
+      }
+      return tasks.splice(indexToDelete, 1)
+    }
+
+    const prioritizeTask = (task) => {
+      const result = deleteTaskByName(task)
+      if (!result) {
+        return
+      }
+      tasks.unshift(task)
+    }
+
+
+
+    addTaskToTheEnd('Задача 3')
+    console.log(tasks)
+
+    deleteTaskByName('Задача 3')
+    console.log(tasks)
+
+    prioritizeTask('Задача 2')
+    console.log(tasks)
+
+  </script>
+</head>
+
+<body>
+
+
+</body>
+
+</html>

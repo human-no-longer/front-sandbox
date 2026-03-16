@@ -1,0 +1,31 @@
+body {
+  max-width: 600px;
+  outline: 1px solid blue;
+}
+
+h1 {
+  width: min-content;
+  background-color: fuchsia;
+}
+
+h2 {
+  width: max-content;
+  background-color: mediumspringgreen;
+}
+
+h3 {
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: peachpuff;
+  margin-bottom: 16px;
+  padding: 8px;
+  outline: 1px dotted brown;
+}
+
+h4 {
+  background-color: antiquewhite;
+  padding: 8px;
+  outline: 1px dotted brown;
+  /* behaves like width: fit-content */
+  max-width: max-content;
+}

@@ -1,0 +1,48 @@
+body {
+  background: #222;
+  padding: 32px;
+  max-width: 600px;
+}
+
+.card {
+  background-color: white;
+  padding: 32px;
+  border-radius: 8px;
+}
+
+h1 {
+  /* using negative margin value */
+  margin-top: -48px;
+  margin-bottom: 24px;
+  padding: 16px 32px;
+  font-size: 2rem;
+  text-align: center;
+  background: deeppink;
+  border-radius: 4px;
+}
+
+.wrapper {
+  background: #222;
+  padding: 32px;
+}
+
+.card-1 {
+  background-color: white;
+  padding: 32px;
+  border-radius: 8px;
+}
+
+/* using img-wrapper to stretch the img to parent's width*/
+.card-1 .img-wrapper {
+  margin-inline: -32px;
+}
+
+.card-1 img {
+  display: block;
+  width: 100%;
+}
+
+.card-1 p,
+.card-1 img {
+  margin-bottom: 16px;
+}

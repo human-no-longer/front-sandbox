@@ -1,0 +1,85 @@
+@use "../util/" as u;
+
+.features {
+  position: relative;
+  padding-block: clamp(u.rem(64), 3.170918367346939rem + 3.537414965986394vw, u.rem(90));
+  background-color: var(--color-lt-gray);
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -35px;
+    left: 0;
+    width: 100%;
+    height: 36px;
+    background-image: url("/assets/images/curved-hero-bottom-light.svg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+    @include u.breakpoint(large) {
+      bottom: -69px;
+      height: 70px;
+    }
+  }
+}
+
+.features-list {
+  display: grid;
+  gap: u.rem(40);
+  justify-items: center;
+
+  @include u.breakpoint(large) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto) 1fr;
+    gap: u.rem(26);
+  }
+}
+
+.features-item {
+  display: grid;
+  justify-items: center;
+  row-gap: u.rem(16);
+  max-width: u.rem(574);
+  text-align: center;
+
+  @include u.breakpoint(medium) {
+    grid-template-columns: auto 1fr;
+    column-gap: u.rem(32);
+    text-align: left;
+  }
+
+  @include u.breakpoint(large) {
+    grid-template-columns: 1fr;
+    grid-template-rows: subgrid;
+    grid-row: span 3;
+    gap: u.rem(28);
+    text-align: center;
+  }
+}
+
+.features-item-number {
+  display: inline-grid;
+  place-items: center;
+  min-width: u.rem(48);
+  aspect-ratio: 1;
+  margin-block-end: u.rem(8);
+  padding: u.rem(4);
+  font-family: "Fraunces", Georgia, "Times New Roman", Times, serif;
+  font-size: clamp(u.rem(20), 1.1224489795918366rem + 0.5442176870748299vw, u.rem(24));
+  line-height: 1;
+  border: 1px solid var(--color-purple);
+  border-radius: 50%;
+
+  @include u.breakpoint(medium) {
+    grid-colimn: 1/2;
+    grid-row: 1/3;
+    align-self: center;
+  }
+
+  @include u.breakpoint(large) {
+    grid-colimn: span 1;
+    grid-row: span 1;
+    min-width: u.rem(56);
+    margin-block-end: u.rem(28);
+  }
+}

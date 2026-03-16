@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Smthn</title>
+  <script src="vendor/react.development.js"></script>
+  <script src="vendor/react-dom.development.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/styled-components/6.1.14/styled-components.min.js" integrity="sha512-jtbJgyPBA54qfG43uTmT0BccCL7AlaMR/GX+DauKRshhHolaDB1iH1t1XxURQAAgc81B2R/zwgcVr/rnqgsF5Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="vendor/babel.min.js"></script>
+  <style>
+    body {
+      max-width: 400px;
+    }
+  </style>
+</head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+  <script type="text/babel">
+    const container = document.getElementById('root')
+    const root = ReactDOM.createRoot(container)
+    root.render(<App />)
+
+    function App() {
+      return (
+        <FrequentlyAskedQuestion
+          question="What does “CSS” stand for?"
+          answer="Cool Styling Strategy"
+        />
+      )
+    }
+
+    function FrequentlyAskedQuestion({
+      question,
+      answer,
+    }) {
+      return (
+        <Wrapper>
+          <Question>{question}</Question>
+          <Answer>{answer}</Answer>
+        </Wrapper>
+      )
+    }
+
+    const Wrapper = styled.details`
+      font-size: 1rem;
+      color: hsl(0deg 0% 25%);
+      margin: 32px;
+      border: 2px solid;
+      border-radius: 4px;
+    `
+
+    const Question = styled.summary`
+      cursor: pointer;
+      padding: 12px 16px;
+      outline-offset: 5px;
+    `
+
+    const Answer = styled.div`
+      background: hsl(0deg 0% 92.5%);
+      border-radius: 0 0 4px 4px;
+      padding: 12px 17px;
+      font-style: italic;
+    `;
+
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Title</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/destyle.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container container_header">
+      <div class="header__inner">
+        <div class="header__inner-left">
+          <div class="header__logo-wrapper">
+            <a href="#" class="header__logo logo">
+              <img src="img/logo.svg" alt="Лого сайта Film." class="log__img" width="68" height="35">
+            </a>
+          </div>
+          <form action="#" method="get" class="header__form search" role="search" aria-label="Site search">
+            <button type="submit" class="search__btn" aria-label="Search button">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M7.04617 0C3.16102 0 0 3.16102 0 7.04617C0 10.9315 3.16102 14.0923 7.04617 14.0923C10.9315 14.0923 14.0923 10.9315 14.0923 7.04617C14.0923 3.16102 10.9315 0 7.04617 0ZM7.04617 12.7915C3.87821 12.7915 1.30083 10.2142 1.30083 7.0462C1.30083 3.87824 3.87821 1.30083 7.04617 1.30083C10.2141 1.30083 12.7915 3.87821 12.7915 7.04617C12.7915 10.2141 10.2141 12.7915 7.04617 12.7915Z" fill="#363636" />
+                <path d="M15.8097 14.8898L12.0806 11.1608C11.8265 10.9067 11.415 10.9067 11.1609 11.1608C10.9068 11.4147 10.9068 11.8266 11.1609 12.0805L14.89 15.8095C15.017 15.9366 15.1833 16.0001 15.3498 16.0001C15.5161 16.0001 15.6826 15.9366 15.8097 15.8095C16.0638 15.5557 16.0638 15.1437 15.8097 14.8898Z" fill="#363636" />
+              </svg>
+            </button>
+            <input type="text" class="search__input" placeholder="Поиск по фильмам...">
+          </form>
+          <button type="submit" class="header__menu-btn" aria-label="Menu button"></button>
+        </div>
+        <div class="header__inner-right">
+          <nav class="header__nav nav">
+            <ul class="nav__list">
+              <li class="nav__item"><a href="#" class="nav__link">Фильмы</a></li>
+              <li class="nav__item"><a href="#" class="nav__link">ТВ</a></li>
+              <li class="nav__item"><a href="#" class="nav__link">Новости</a></li>
+              <li class="nav__item"><a href="#" class="nav__link">О сервисе</a></li>
+            </ul>
+          </nav>
+          <div class="header__buttons">
+            <button class="header__btn btn btn_light">Регистрация</button>
+            <button class="header__btn btn btn_dark">Войти</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="film-info">
+    <section class="movie">
+      <div class="container">
+        <div class="movie__inner">
+          <div class="movie__media">
+            <img src="img/poster.jpg" alt="" class="movie__poster" width="358" height="464">
+            <a class="movie__media-btn btn btn_light" href="https://www.youtube.com/watch?v=ahZFCF--uRY" data-fancybox="video-gallery">
+              <img src="img/play.svg" alt="Play the trailer" class="movie__media-btn-icon" aria-hidden="true">
+              <span>Посмотреть трейлер</span>
+            </a>
+          </div>
+          <div class="movie__metadata">
+            <h1 class="movie__title">
+              <strong class="movie__title-rus">Охотники за привидениями: Наследники</strong>
+              <span class="movie__title-eng">Ghostbusters: Afterlife</span>
+            </h1>
+            <p class="movie__descr">Мать-одиночка с двумя детьми-подростками селится на старой ферме в Оклахоме, полученной в наследство от отца, которого она не знала. Дети пытаются больше узнать о своем деде и находят автомобиль Ecto-1, принадлежавший знаменитым охотникам за привидениями.</p>
+            <div class="movie__data">
+              <div class="movie__data-column movie__data-column_left">
+                <div class="movie__data-row">
+                  <span class="movie__data-term">Режиссер</span>
+                  <span class="movie__data-details">Джейсон Райтман</span>
+                </div>
+                <div class="movie__data-row">
+                  <span class="movie__data-term">Сценарий</span>
+                  <span class="movie__data-details">Дэн Эйкройд</span>
+                </div>
+                <div class="movie__data-row">
+                  <span class="movie__data-term">Премьера</span>
+                  <span class="movie__data-details">09.07.2020 (РФ)</span>
+                </div>
+              </div>
+              <div class="movie__data-column movie__data-column_right">
+                <div class="movie__data-row">
+                  <span class="movie__data-term">Бюджет</span>
+                  <span class="movie__data-details">1 000 000 $</span>
+                </div>
+                <div class="movie__data-row">
+                  <span class="movie__data-term">Кинопрокат</span>
+                  <span class="movie__data-details">SPPR</span>
+                </div>
+                <div class="movie__data-row">
+                  <span class="movie__data-term">Премьера</span>
+                  <span class="movie__data-details">09.07.2020 (РФ)</span>
+                </div>
+              </div>
+            </div>
+            <article class="movie__rating rating">
+              <div class="rating__badge">92%</div>
+              <div class="rating__text">
+                <h3 class="rating__title">Рейтинг зрителей</h3>
+                <p class="rating__average">Средняя оценка: <span>4,5/5</span></p>
+                <p class="rating__votes">Всего голосов: <span>4 350</span></p>
+              </div>
+            </article>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <section class="staff">
+      <div class="container">
+        <div class="staff__header">
+          <div class="staff__tab staff__tab_active" role="button" data-staff="actors">
+            <h2>Актеры</h2>
+          </div>
+          <div class="staff__tab" role="button" data-staff="creators">
+            <h2>Создатели</h2>
+          </div>
+        </div>
+        <div class="staff__tab-content staff__tab-content_active" data-staff="actors">
+          <ul class="staff__list">
+            <li class="staff__item">
+              <a href="#" class="staff__link person">
+                <img class="person__img" src="img/actor-01.png" alt="Person image" width="100" height="100">
+                <div class="person__name">
+                  <span class="person__name-rus">Кэрри Кун</span>
+                  <span class="person__name-eng">Carrie Coon</span>
+                </div>
+              </a>
+            </li>
+            <li class="staff__item">
+              <a href="#" class="staff__link person">
+                <img class="person__img" src="img/actor-02.png" alt="Person image" width="100" height="100">
+                <div class="person__name">
+                  <span class="person__name-rus">Билл Мюррей</span>
+                  <span class="person__name-eng">Bimm Murray</span>
+                </div>
+              </a>
+            </li>
+            <li class="staff__item">
+              <a href="#" class="staff__link person">
+                <img class="person__img" src="img/actor-08.png" alt="Person image" width="100" height="100">
+                <div class="person__name">
+                  <span class="person__name-rus">Пол Радд</span>
+                  <span class="person__name-eng">Paul Rudd</span>
+                </div>
+              </a>
+            </li>
+            <li class="staff__item">
+              <a href="#" class="staff__link person">
+                <img class="person__img" src="img/actor-07.png" alt="Person image" width="100" height="100">
+                <div class="person__name">
+                  <span class="person__name-rus">Энни Поттс</span>
+                  <span class="person__name-eng">Annie Potts</span>
+                </div>
+              </a>
+            </li>
+            <li class="staff__item">
+              <a href="#" class="staff__link person">
+                <img class="person__img" src="img/actor-06.png" alt="Person image" width="100" height="100">
+                <div class="person__name">
+                  <span class="person__name-rus">МакКенна Грейс</span>
+                  <span class="person__name-eng">Mckenna Grace</span>
+                </div>
+              </a>
+            </li>
+            <li class="staff__item">
+              <a href="#" class="staff__link person">
+                <img class="person__img" src="img/actor-05.png" alt="Person image" width="100" height="100">
+                <div class="person__name">
+                  <span class="person__name-rus">Дэн Эйкройд</span>
+                  <span class="person__name-eng">Dan Aykroyd</span>
+                </div>
+              </a>
+            </li>
+            <li class="staff__item">
+              <a href="#" class="staff__link person">
+                <img class="person__img" src="img/actor-04.png" alt="Person image" width="100" height="100">
+                <div class="person__name">
+                  <span class="person__name-rus">Эрни Хадсон</span>
+                  <span class="person__name-eng">Ernie Hudson</span>
+                </div>
+              </a>
+            </li>
+            <li class="staff__item">
+              <a href="#" class="staff__link person">
+                <img class="person__img" src="img/actor-03.png" alt="Person image" width="100" height="100">
+                <div class="person__name">
+                  <span class="person__name-rus">Финн Вулфард</span>
+                  <span class="person__name-eng">Finn Wolfhard</span>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="staff__tab-content" data-staff="creators">
+          <ul class="staff__list">
+            <li class="staff__item">
+              <a href="#" class="staff__link person">
+                <img class="person__img" src="img/director-1.jpg" alt="Person image" width="100" height="100">
+                <div class="person__name">
+                  <span class="person__name-rus">Джейсон Райтман</span>
+                  <span class="person__name-eng">Jason Reitman</span>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <article class="footer__news news">
+        <h2 class="news__title">Новости по теме</h2>
+        <ul class="news__list">
+          <li class="news__item">
+            <a href="#" class="news__link">
+              <time datetime="2020-03-31" class="news__item-time">31 марта 2020</time>
+              <h4 class="news__item-title">«Морбиуса» и «Охотников за привидениями» перенесли на следующий год</h4>
+            </a>
+          </li>
+          <li class="news__item">
+            <a href="#" class="news__link">
+              <time datetime="2020-03-31" class="news__item-time">31 марта 2020</time>
+              <h4 class="news__item-title">«Морбиуса» и «Охотников за привидениями» перенесли на следующий год</h4>
+            </a>
+          </li>
+          <li class="news__item">
+            <a href="#" class="news__link">
+              <time datetime="2020-03-31" class="news__item-time">31 марта 2020</time>
+              <h4 class="news__item-title">«Морбиуса» и «Охотников за привидениями» перенесли на следующий год</h4>
+            </a>
+          </li>
+          <li class="news__item">
+            <a href="#" class="news__link">
+              <time datetime="2020-03-31" class="news__item-time">31 марта 2020</time>
+              <h4 class="news__item-title">«Морбиуса» и «Охотников за привидениями» перенесли на следующий год</h4>
+            </a>
+          </li>
+        </ul>
+      </article>
+    </div>
+  </footer>
+
+</body>
+
+</html>

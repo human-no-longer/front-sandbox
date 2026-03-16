@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    let balance = 100
+    const operations = [1000, -700, 300, -500, 10000]
+
+    const isBalancePositive = (el) => balance + el >= 0
+
+    const calcFinalBalance = (arr) => {
+      for (const element of arr) {
+
+        if (!isBalancePositive(element)) {
+          return balance + ' денег на следующую трату не хватило'
+        }
+        balance += element
+      }
+      return balance
+    }
+
+    const calcAverage = (arr, sum = 0) => {
+      for (const item of arr) {
+        sum += item
+      }
+      return sum / arr.length
+    }
+
+    const calcAverageIncomeAndExpenses = (operations) => {
+      const incomeArr = []
+      const expensesArr = []
+      for (const item of operations) {
+        if (item >= 0) {
+          incomeArr.push(item)
+        } else {
+          expensesArr.push(item)
+        }
+      }
+      return [calcAverage(incomeArr), calcAverage(expensesArr)]
+    }
+
+    console.log(calcFinalBalance(operations))
+    console.log(calcAverageIncomeAndExpenses(operations)) 
+  </script>
+</head>
+
+<body>
+
+
+</body>
+
+</html>

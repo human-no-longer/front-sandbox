@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+
+    const company = {
+      name: 'ООО Агро',
+      employees: [
+        {
+          name: 'Света',
+          getName() {
+            return this.name
+          }
+        }
+      ],
+      ceo: {
+        name: 'Вася',
+        getName() {
+          return this.name
+        }
+      },
+      getName() {
+        return this.name
+      }
+
+    }
+
+    console.log(company.getName())
+    console.log(company.ceo.getName())
+    console.log(company.employees.map(employee => employee.getName())[0])
+
+  </script>
+</head>
+
+<body>
+
+
+</body>
+
+</html>

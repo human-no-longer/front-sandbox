@@ -1,0 +1,47 @@
+.about {
+  display: flex;
+  background-color: var(--white);
+}
+
+.about_reverse {
+  flex-direction: row-reverse;
+  background-color: var(--light-grey);
+}
+
+.about__info {
+  padding-block: 72px 54px;
+  padding-left: max(var(--container-offset),
+      calc((100% - var(--container-width)) / 2));
+  padding-right: 84px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.about_reverse .about__info {
+  padding-right: max(var(--container-offset),
+      calc((100% - var(--container-width)) / 2));
+  padding-left: 84px;
+}
+
+.about__title {
+  margin-bottom: 25px;
+  max-width: 530px;
+}
+
+.about__descr {
+  margin-block: 0;
+  margin-bottom: 20px;
+  max-width: 530px;
+}
+
+.about__link {
+  margin-top: auto;
+}
+
+.about__img {
+  width: 50%;
+  flex-shrink: 0;
+  object-fit: cover;
+}

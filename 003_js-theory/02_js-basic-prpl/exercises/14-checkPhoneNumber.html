@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    const num1 = '+7(901)666-66-66'
+
+    const checkPhoneNumber = (str) => {
+      const cleanStr = cleanTheStringPrimitive(str)
+      if (!cleanStr.startsWith('8')) {
+        return false
+      }
+      if (cleanStr.length !== 11) {
+        return false
+      }
+      for (const char of cleanStr) {
+        if (isNaN(Number(char))) {
+          return false
+        }
+      }
+      return true
+    }
+
+    const cleanTheStringPrimitive = (str) => {
+      str = str.trim()
+      str = str.replaceAll('+7', '8')
+      str = str.replaceAll('(', '')
+      str = str.replaceAll(')', '')
+      str = str.replaceAll('-', '')
+      str = str.replaceAll(' ', '')
+      return str
+    }
+
+    console.log(checkPhoneNumber('+7(901)664-64-68'))
+    console.log(checkPhoneNumber('+7(901)66e-66-66'))
+    console.log(checkPhoneNumber('89016616666'))
+    console.log(checkPhoneNumber('9016616666'))
+    console.log(checkPhoneNumber('+79016666')) 
+  </script>
+</head>
+
+<body>
+
+
+</body>
+
+</html>

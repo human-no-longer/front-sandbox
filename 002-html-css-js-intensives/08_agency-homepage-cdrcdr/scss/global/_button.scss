@@ -1,0 +1,24 @@
+@use "../util/" as u;
+
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: u.rem(12) u.rem(24);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--color-dk-purple);
+  background-color: var(--color-green);
+  border: 2px solid var(--color-green);
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+
+  &:hover,
+  &:focus-visible {
+    color: var(--color-green);
+    background-color: transparent;
+  }
+
+  @include u.breakpoint(large) {
+    padding: u.rem(14) u.rem(32);
+  }
+}

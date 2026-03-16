@@ -1,0 +1,93 @@
+.single {
+  padding-block: 50px;
+  background-color: var(--light-grey);
+}
+
+.single__content {
+  display: flex;
+  gap: 65px
+}
+
+.single__text {
+  color: var(--dark-primary);
+}
+
+.single__top {
+  margin-bottom: 24px;
+  padding-top: 30px;
+  max-width: 518px;
+  border-bottom: 1px solid var(--border-grey);
+}
+
+.single__title {
+  margin-block: 0;
+  margin-bottom: 16px;
+}
+
+.single__price {
+  margin-bottom: 28px;
+  display: block;
+  font-size: 24px;
+}
+
+.single__info-item:not(:last-child) {
+  margin-bottom: 36px;
+}
+
+.single__info-item:last-of-type {
+  margin-bottom: 48px;
+}
+
+.single__info-subtitle {
+  margin-block: 0;
+  margin-bottom: 12px;
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.single__info-descr {
+  max-width: 500px;
+}
+
+.chars {
+  display: flex;
+  gap: 100px;
+}
+
+.chars__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.chars__item:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: -50px;
+  transform: translateY(-50%);
+  width: 1px;
+  height: calc(100% - 10px);
+  background-color: var(--border-grey);
+}
+
+.chars__item-title {
+  font-family: var(--second-family);
+  font-size: 14px;
+}
+
+.chars__item-definition {
+  font-size: 16px;
+  margin: 0;
+}
+
+.single__stepper {
+  width: 122px;
+}
+
+.single__btns {
+  display: flex;
+  gap: 16px
+}

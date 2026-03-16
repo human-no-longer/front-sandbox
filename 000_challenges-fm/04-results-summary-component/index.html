@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Frontend Mentor | Results summary component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: var(--light-royal-blue-background);
+    }
+  </style>
+  <script src="js/script.js" defer></script>
+</head>
+
+<body>
+
+  <main>
+    <article class="card">
+      <div class="card__result result">
+        <h2 class="result__title column-title">Your Result</h2>
+        <div class="result__container">
+          <div class="result__container-inner">
+            <span class="result__average">76</span>
+            <span class="result__max">of 100</span>
+          </div>
+        </div>
+        <div class="result__text">
+          <p class="result__achievement"><strong>Great</strong></p>
+          <p class="result__message">You scored higher than 65% of the people who have taken these&nbsp;tests.</p>
+        </div>
+      </div>
+      <div class="card__summary summary">
+        <h2 class="summary__title column-title">Summary</h2>
+        <ul class="summary__table table list-reset">
+          <li class="table__item table__item--first">
+            <div class="table__item-col-left">
+              <img src="assets/images/icon-reaction.svg" alt="Category icon" class="table__item-icon">
+              <span class="table__item-category">Reaction</span>
+            </div>
+            <div class="table__item-col-right">
+              <span class="table__item-score">80</span>
+              <span class="table__item-max">/ 100</span>
+            </div>
+          </li>
+          <li class="table__item table__item--second">
+            <div class="table__item-col-left">
+              <img src="assets/images/icon-memory.svg" alt="Category icon" class="table__item-icon">
+              <span class="table__item-category">Memory</span>
+            </div>
+            <div class="table__item-col-right">
+              <span class="table__item-score">92</span>
+              <span class="table__item-max">/ 100</span>
+            </div>
+          </li>
+          <li class="table__item table__item--third">
+            <div class="table__item-col-left">
+              <img src="assets/images/icon-verbal.svg" alt="Category icon" class="table__item-icon">
+              <span class="table__item-category">Verbal</span>
+            </div>
+            <div class="table__item-col-right">
+              <span class="table__item-score">61</span>
+              <span class="table__item-max">/ 100</span>
+            </div>
+          </li>
+          <li class="table__item table__item--fourth">
+            <div class="table__item-col-left">
+              <img src="assets/images/icon-visual.svg" alt="Category icon" class="table__item-icon">
+              <span class="table__item-category">Visual</span>
+            </div>
+            <div class="table__item-col-right">
+              <span class="table__item-score">72</span>
+              <span class="table__item-max">/ 100</span>
+            </div>
+          </li>
+        </ul>
+        <button class="summary__btn btn-reset">Continue</button>
+      </div>
+    </article>
+  </main>
+
+
+
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://github.com/chlvk">chlvk👀</a>.
+    </div>
+  </footer>
+
+</body>
+
+</html>

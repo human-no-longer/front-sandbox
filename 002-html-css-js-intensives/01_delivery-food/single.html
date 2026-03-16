@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Single Restaurant Page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/destyle.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+
+<body class="single">
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <a class="header__logo logo" href="index.html">
+          <img src="img/logo.svg" alt="Лого сайта" class="logo__img" width="100" height="36">
+        </a>
+        <form action="index.html" method="het" class="header__form address-form">
+          <input type="text" class="address-form__input input" placeholder="Адрес доставки">
+        </form>
+        <div class="header__buttons">
+          <button class="header__sign-in btn btn_dark">
+            <img src="img/sign-in.svg" alt="" class="btn__icon" aria-hidden="true">
+            <span>Войти</span>
+          </button>
+          <button class="header__to-cart btn btn_light">
+            <img src="img/cart.svg" alt="" class="btn__icon" aria-hidden="true">
+            <span>Корзина</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="content">
+    <section class="cards">
+      <div class="container">
+        <header class="cards__header">
+          <h2 class="cards__title">Рестораны</h2>
+          <div class="card__details">
+            <div class="card__rating">
+              <span>4.5</span>
+            </div>
+            <div class="card__text">
+              <span class="card__price">От&nbsp;900&nbsp;&#8381;</span>
+              <span class="card__tag">Пицца</span>
+            </div>
+          </div>
+        </header>
+        <ul class="cards__list">
+          <li class="cards__item">
+            <article class="card">
+              <img src="img/single-1.jpg" alt="Фирменное блюдо" class="card__img" width="384" height="212">
+              <div class="card__meal-info">
+                <h3 class="card__meal-title">Ролл угорь стандарт</h3>
+                <p class="card__meal-ingredients">Рис, угорь, соус унаги, кунжут, водоросли нори.</p>
+                <div class="card__meal-footer">
+                  <button class="card__meal-btn btn btn_dark btn_reverse">
+                    <img src="img/cart-white.svg" alt="" class="btn__icon" aria-hidden="true">
+                    <span>В корзину</span>
+                  </button>
+                  <span class="card__meal-price">250&nbsp;&#8381;</span>
+                </div>
+              </div>
+            </article>
+          </li>
+          <li class="cards__item">
+            <article class="card">
+              <img src="img/single-2.jpg" alt="Фирменное блюдо" class="card__img" width="384" height="212">
+              <div class="card__meal-info">
+                <h3 class="card__meal-title">Калифорния лосось стандарт</h3>
+                <p class="card__meal-ingredients">Рис, лосось, авокадо, огурец, майонез, икра масаго, водоросли нори.</p>
+                <div class="card__meal-footer">
+                  <button class="card__meal-btn btn btn_dark btn_reverse">
+                    <img src="img/cart-white.svg" alt="" class="btn__icon" aria-hidden="true">
+                    <span>В корзину</span>
+                  </button>
+                  <span class="card__meal-price">250&nbsp;&#8381;</span>
+                </div>
+              </div>
+            </article>
+          </li>
+          <li class="cards__item">
+            <article class="card">
+              <img src="img/single-3.jpg" alt="Фирменное блюдо" class="card__img" width="384" height="212">
+              <div class="card__meal-info">
+                <h3 class="card__meal-title">Окинава стандарт</h3>
+                <p class="card__meal-ingredients">Рис, креветка отварная, сыр сливочный, лосось, огурец свежий...</p>
+                <div class="card__meal-footer">
+                  <button class="card__meal-btn btn btn_dark btn_reverse">
+                    <img src="img/cart-white.svg" alt="" class="btn__icon" aria-hidden="true">
+                    <span>В корзину</span>
+                  </button>
+                  <span class="card__meal-price">250&nbsp;&#8381;</span>
+                </div>
+              </div>
+            </article>
+          </li>
+          <li class="cards__item">
+            <article class="card">
+              <img src="img/single-4.jpg" alt="Фирменное блюдо" class="card__img" width="384" height="212">
+              <div class="card__meal-info">
+                <h3 class="card__meal-title">Цезарь маки хl</h3>
+                <p class="card__meal-ingredients">Рис, куриная грудка копченая, икра масаго, томат, айсберг, соус цезарь...</p>
+                <div class="card__meal-footer">
+                  <button class="card__meal-btn btn btn_dark btn_reverse">
+                    <img src="img/cart-white.svg" alt="" class="btn__icon" aria-hidden="true">
+                    <span>В корзину</span>
+                  </button>
+                  <span class="card__meal-price">250&nbsp;&#8381;</span>
+                </div>
+              </div>
+            </article>
+          </li>
+          <li class="cards__item">
+            <article class="card">
+              <img src="img/single-5.jpg" alt="Фирменное блюдо" class="card__img" width="384" height="212">
+              <div class="card__meal-info">
+                <h3 class="card__meal-title">Ясай маки стандарт 185 г</h3>
+                <p class="card__meal-ingredients">Рис, помидор свежий, перец болгарский, авокадо, огурец, айсберг</p>
+                <div class="card__meal-footer">
+                  <button class="card__meal-btn btn btn_dark btn_reverse">
+                    <img src="img/cart-white.svg" alt="" class="btn__icon" aria-hidden="true">
+                    <span>В корзину</span>
+                  </button>
+                  <span class="card__meal-price">250&nbsp;&#8381;</span>
+                </div>
+              </div>
+            </article>
+          </li>
+          <li class="cards__item">
+            <article class="card">
+              <img src="img/single-6.jpg" alt="Фирменное блюдо" class="card__img" width="384" height="212">
+              <div class="card__meal-info">
+                <h3 class="card__meal-title">Ролл с креветкой стандарт</h3>
+                <p class="card__meal-ingredients">Рис, водоросли нори, креветки отварные, сыр сливочный, огурцы</p>
+                <div class="card__meal-footer">
+                  <button class="card__meal-btn btn btn_dark btn_reverse">
+                    <img src="img/cart-white.svg" alt="" class="btn__icon" aria-hidden="true">
+                    <span>В корзину</span>
+                  </button>
+                  <span class="card__meal-price">250&nbsp;&#8381;</span>
+                </div>
+              </div>
+            </article>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <a class="footer__logo logo">
+          <img src="img/logo.svg" alt="Лого сайта" class="logo__img" width="100" height="36">
+        </a>
+        <nav class="footer__nav nav">
+          <ul class="nav__list">
+            <li class="nav__item"><a href="#" class="nav__link">Ресторанам</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Курьерам</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Пресс-центр</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
+          </ul>
+        </nav>
+        <ul class="footer__social social">
+          <li class="social__item">
+            <a href="#" class="social__link social__link_ig">
+              <img src="img/insta-social.svg" alt="Ig icon" class="social__link-img" width="26" height="26">
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link social__link_fb">
+              <img src="img/fb-social.svg" alt="Fb icon" class="social__link-img" width="26" height="26">
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link social__link_vk">
+              <img src="img/vk-social.svg" alt="VK icon" class="social__link-img" width="36" height="21">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <div class="modal" data-modal>
+    <div class="modal__dialog">
+      <header class="modal__header">
+        <h2 class="modal__title">Корзина</h2>
+        <button class="modal__close-btn" aria-label="Close the modal window">
+          <img src="img\close.svg" alt="Close button icon" class="modal__close-btn-icon" aria-hidden="true">
+        </button>
+      </header>
+      <ul class="modal__list">
+        <li class="modal__item">
+          <span class="modal__item-name">Ролл угорь стандарт</span>
+          <span class="modal__item-price">250&#8381;</span>
+          <div class="modal__item-stepper">
+            <div class="stepper">
+              <button class="stepper__btn stepper__btn_minus" aria-label="Decrease quantity">-</button>
+              <input type="number" min="1" max="999" value="1" class="stepper__input">
+              <button class="stepper__btn stepper__btn_plus" aria-label="Increase quantity">+</button>
+            </div>
+          </div>
+        </li>
+        <li class="modal__item">
+          <span class="modal__item-name">Ролл угорь стандарт</span>
+          <span class="modal__item-price">250&#8381;</span>
+          <div class="modal__item-stepper">
+            <div class="stepper">
+              <button class="stepper__btn stepper__btn_minus" aria-label="Decrease quantity">-</button>
+              <input type="number" min="1" max="999" value="1" class="stepper__input">
+              <button class="stepper__btn stepper__btn_plus" aria-label="Increase quantity">+</button>
+            </div>
+          </div>
+        </li>
+        <li class="modal__item">
+          <span class="modal__item-name">Ролл угорь стандарт</span>
+          <span class="modal__item-price">250&#8381;</span>
+          <div class="modal__item-stepper">
+            <div class="stepper">
+              <button class="stepper__btn stepper__btn_minus" aria-label="Decrease quantity">-</button>
+              <input type="number" min="1" max="999" value="1" class="stepper__input">
+              <button class="stepper__btn stepper__btn_plus" aria-label="Increase quantity">+</button>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <footer class="modal__footer">
+        <span class="modal__total-price">1250&#8381;</span>
+        <div class="modal__buttons">
+          <button class="modal__btn btn btn_dark">Оформить заказ</button>
+          <button class="modal__btn btn btn_light">Отмена</button>
+        </div>
+      </footer>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Smthn</title>
+  <script src="vendor/react.development.js"></script>
+  <script src="vendor/react-dom.development.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/styled-components/6.1.14/styled-components.min.js" integrity="sha512-jtbJgyPBA54qfG43uTmT0BccCL7AlaMR/GX+DauKRshhHolaDB1iH1t1XxURQAAgc81B2R/zwgcVr/rnqgsF5Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="vendor/babel.min.js"></script>
+  <style>
+    body {
+      max-width: 400px;
+    }
+  </style>
+</head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+  <script type="text/babel">
+    const container = document.getElementById('root')
+    const root = ReactDOM.createRoot(container)
+    root.render(<App />)
+
+    function App() {
+      return (
+        <LoginForm
+          handleSubmit={(ev) => {
+            ev.preventDefault()
+            alert('Submitted!')
+          }}
+        />
+      )
+    }
+
+    function LoginForm({ handleSubmit }) {
+      return (
+        <Wrapper onSubmit={handleSubmit}>
+          <Label>
+            Email:
+            <Input
+              type="email"
+              placeholder="me@you.com"
+            />
+          </Label>
+          <Label>
+            Password:
+            <Input
+              type="password"
+            />
+          </Label>
+          <Button type="submit">Log In</Button>
+        </Wrapper>
+      )
+    }
+
+    const Wrapper = styled.form`
+      width: max-content;
+      margin: 16px auto;
+      border: 1px dotted silver;
+      padding: 26px 32px 32px;
+      border-radius: 2px;
+    `
+
+    const Label = styled.label`
+      display: block;
+      margin-bottom: 16px;
+    `
+
+    const Input = styled.input`
+      display: block;
+      width: 175px;
+      border: 1px solid black;
+      border-bottom-width: 2px;
+      padding: 6px 8px;
+      margin-top: 4px;
+      border-radius: 2px 2px 3px 3px;
+
+      &:focus {
+        outline: 3px auto blue;
+        outline-offset: 2px;
+        border-color: transparent;
+      }
+    `
+
+    const Button = styled.button`
+      display: block;
+      margin-top: 40px;
+      width: 100%;
+      background: black;
+      color: white;
+      padding: 8px;
+      border: none;
+      font-size: 1rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      border-radius: 3px;
+
+      &:focus {
+        outline: 3px auto blue;
+        background: blue;
+        outline-offset: 2px;
+      }
+    `
+
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+.stepper {
+  height: 46px;
+  display: grid;
+  grid-template-columns: 42px calc(100% - 84px) 42px;
+  align-items: center;
+  color: var(--dark-primary);
+  background-color: var(--white)
+}
+
+.stepper_colored {
+  background-color: var(--light-grey);
+}
+
+.stepper__input {
+  padding-block: 12px;
+  border: none;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  color: inherit;
+  background-color: inherit;
+  border-radius: 0;
+}
+
+.stepper__btn {
+  height: 100%;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 16px;
+  color: inherit;
+  background-color: inherit;
+  user-select: none;
+}
+
+.stepper__btn:disabled {
+  color: var(--border-grey);
+  pointer-events: none;
+}

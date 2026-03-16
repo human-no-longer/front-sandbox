@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    const creditCardNumber = '2234509872134098'
+    const maskCardNumber = (number) => {
+      return number.slice(-4).padStart(16, '*')
+    }
+    const maskedNumber = maskCardNumber(creditCardNumber)
+    console.log(maskedNumber)
+  </script>
+</head>
+
+<body>
+
+
+</body>
+
+</html>

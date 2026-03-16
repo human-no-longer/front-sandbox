@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    /*
+  Ваша часовая ставка 80$ и вы готовы работать не
+  более 5 часов в день 5 дней в неделю (кроме выходных).
+  К вам приходит заказчик и предлагает заказ на 40
+  часов работы.
+  Сейчас понедельник.
+  Вы должны уехать через 11 дней.
+  Выведете в консоль:
+  - Boolean переменную успеете ли вы взяться за работу
+  - Сколько вы за неё попросите?
+  */
+    const payRate = 80
+    const daysAvailable = 11 - 2
+    const hoursNeeded = 40
+    const hoursPerDay = 5
+
+    console.log(`Получится ли взять заказ: ${hoursNeeded < daysAvailable * hoursPerDay}`)
+    console.log(`Сумма за заказа: $${payRate * hoursNeeded}`)
+
+  </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

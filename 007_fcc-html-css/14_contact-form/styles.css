@@ -1,0 +1,59 @@
+body {
+  background-image: linear-gradient(to right, beige, teal);
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.form-container {
+  width: 50vw;
+  max-width: 400px;
+  margin-inline: auto;
+  padding: 1rem 1.5rem;
+  background-color: honeydew;
+  border: 1px solid fuchsia;
+  border-radius: 0.5rem;
+}
+
+form {
+  font-family: Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2 {
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin: 0.5rem 0;
+  font-weight: 700;
+  color: darkblue;
+}
+
+input,
+textarea {
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  border: 1px solid fuchsia;
+  border-radius: 0.25rem;
+}
+
+button {
+  display: block;
+  width: 50%;
+  height: 2em;
+  margin: 0.5rem auto;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  background-color: fuchsia;
+  border: 1px solid transparent;
+}
+
+button:hover {
+  color: darkblue;
+  background-color: white;
+  border-color: fuchsia;
+}

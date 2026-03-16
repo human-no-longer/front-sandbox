@@ -1,0 +1,57 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body {
+  font-family: 'Libre Franklin', sans-serif;
+  line-height: 1.5;
+}
+img {
+  max-width: 100%;
+}
+.button {
+  background-color: #2d697c;
+  padding: 0.5rem;
+  color: white;
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+.button:hover {
+  background-color: #327c94;
+}
+a {
+  color: #2d697c;
+}
+a:hover {
+  text-decoration: none;
+}
+
+.photo-cards {
+  display: flex;
+  gap: 2%;
+  align-items: flex-end;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 850px) {
+  .photo-cards {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+  }
+  .card {
+    flex-basis: 32%;
+  }
+
+  .card .link {
+    margin-top: auto;
+  }
+}

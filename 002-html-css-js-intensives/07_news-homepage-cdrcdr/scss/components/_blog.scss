@@ -1,0 +1,49 @@
+@use "../util" as u;
+
+.blog {
+  display: grid;
+  gap: u.rem(30);
+
+  @media (width >= u.em(1110)) {
+    grid-column: 1 / -1;
+    grid-row: 3 / -1;
+    grid-template-columns: subgrid;
+    padding-block-start: u.rem(40);
+  }
+}
+
+.blog-post {
+  display: grid;
+  grid-template-columns: u.rem(100) auto;
+  grid-template-rows: repeat(2, auto) 1fr;
+  column-gap: u.rem(24);
+}
+
+.blog-post-img {
+  grid-row: 1 / span 3;
+  width: u.rem(100);
+}
+
+.blog-post-number {
+  margin-block-end: u.rem(12);
+  font-size: var(--f-m);
+  line-height: 1;
+  font-weight: 700;
+  color: var(--c-red);
+}
+
+.blog-post-title {
+  margin-block-end: u.rem(9);
+}
+
+.blog-post-link {
+  font-size: var(--f-xs);
+  line-height: 1.3;
+  font-weight: 800;
+  color: var(--c-blue);
+
+  &:hover,
+  &:focus-visible {
+    color: var(--c-red);
+  }
+}

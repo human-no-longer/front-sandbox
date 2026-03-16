@@ -1,0 +1,46 @@
+@use "../util" as u;
+
+.new {
+  padding-inline: u.rem(20);
+  padding-block: u.rem(24);
+  background-color: var(--c-blue);
+
+  @media (width >= u.em(1110)) {
+    grid-column: 3 / -1;
+    grid-row: 1 / 3;
+  }
+}
+
+.new-title {
+  margin-block-end: u.rem(4);
+  font-size: var(--f-l);
+  color: var(--c-yellow);
+}
+
+.post {
+  padding-block: u.rem(30);
+}
+
+.post:not(:last-of-type) {
+  border-bottom: 1px solid var(--c-gray);
+}
+
+.post-title {
+  margin-block-end: u.rem(8);
+}
+
+.post-link {
+  font-size: var(--f-s);
+  line-height: 1.2;
+  font-weight: 800;
+  color: var(--c-white);
+
+  &:hover,
+  &:focus-visible {
+    color: var(--c-yellow);
+  }
+}
+
+.post-descr {
+  color: var(--c-silver);
+}

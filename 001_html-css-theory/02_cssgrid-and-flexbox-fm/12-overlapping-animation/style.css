@@ -1,0 +1,44 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body {
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+.pluto {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+}
+
+img:first-child,
+img:last-child {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+img:last-child {
+  animation: pluto-fade 3s infinite alternate;
+}
+
+@keyframes pluto-fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

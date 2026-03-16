@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+
+    const warehouse = {
+      goods: [],
+      findGoodById(id) {
+        return this.goods.find(item => item.id === id)
+      },
+      addGood(good) {
+        if (!this.findGoodById(good.id)) {
+          this.goods.push(good)
+        }
+      },
+      getGoodsWeight() {
+        return this.goods.reduce((acc, cur) => {
+          return acc + (cur.weight?.kg ?? 0)
+        }, 0)
+      }
+    }
+
+    /* товары */
+    const car = {
+      id: 1,
+      weight: {
+        kg: 1000
+      },
+      brand: 'Ford'
+    }
+
+    const chair = {
+      id: 2,
+      weight: {
+        kg: 2
+      },
+    }
+    const paper = {
+      id: 3,
+      color: 'red'
+    }
+
+    warehouse.addGood(car)
+    warehouse.addGood(chair)
+    warehouse.addGood(paper)
+    warehouse.addGood(car)
+    console.log(warehouse)
+    const searchResult = (warehouse.findGoodById(3))
+    console.log(searchResult)
+    const weightResult = warehouse.getGoodsWeight()
+    console.log(weightResult)
+  </script>
+</head>
+
+<body>
+
+
+</body>
+
+</html>

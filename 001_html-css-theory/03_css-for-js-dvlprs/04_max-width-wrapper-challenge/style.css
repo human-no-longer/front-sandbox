@@ -1,0 +1,18 @@
+body {
+  max-width: 600px;
+  background-color: black;
+  outline: 1px solid blue;
+
+}
+
+.card {
+  outline: 1px solid green;
+  background-color: white;
+}
+
+.max-width-wrapper {
+  max-width: 350px;
+  margin-inline: auto;
+  padding-inline: 16px;
+  outline: 1px solid red;
+}

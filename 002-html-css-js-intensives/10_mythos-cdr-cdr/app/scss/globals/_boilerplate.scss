@@ -1,0 +1,78 @@
+@use "../util/" as u;
+
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: u.$font;
+  color: var(--text-dark);
+  background-color: var(--main-bg);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: fixed;
+  transform: scale(0);
+}
+
+.to-main-link:focus {
+  transform: scale(1);
+  padding: u.rem(8);
+  color: var(--text-dark);
+  background-color: var(--main-bg);
+  border: 1px dotted var(--text-dark);
+  outline: none;
+}
+
+.btn {
+  display: inline-flex;
+  padding: u.rem(12) u.rem(16);
+  font-size: u.rem(18);
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: u.rem(24);
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.btn.primary {
+  color: var(--button-primary-text);
+  background-color: var(--button-primary-bg);
+
+  &:hover {
+    background-color: var(--button-primary-bg-hover);
+  }
+}
+
+.btn.secondary {
+  padding: u.rem(10) u.rem(14);
+  color: var(--button-secondary-text);
+  background-color: var(--button-secondary-bg);
+  border: 2px solid var(--button-secondary-border);
+
+  &:hover {
+    color: var(--button-secondary-text-hover);
+    background-color: var(--button-secondary-bg-hover);
+  }
+}
+
+.section {
+  padding-block: clamp(u.rem(60), 3.1818rem + 2.4242vw, u.rem(80));
+}

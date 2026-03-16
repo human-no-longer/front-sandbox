@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    const users = [
+      { name: 'Гуля', age: 73 },
+      { name: 'Зая', age: 15 },
+      { name: 'Чупа', age: 22 },
+      { name: 'Фекла', age: 66 },
+    ]
+    const sortByAge = (arr) => arr.sort((a, b) => a['age'] - b['age'])
+    console.log(sortByAge(users))
+
+    const workers = [
+      {
+        name: 'Вася',
+        surname: 'Ложкин',
+        age: 33,
+        skills: ['Flute', 'Guitar']
+      }, {
+        name: 'Шошанна',
+        surname: 'Катце',
+        age: 32,
+        skills: ['Убивание комаров', 'Guitar', 'Бас']
+      }
+    ]
+
+    const transformObjects = (obj) => {
+      return {
+        fullName: obj.name + ' ' + obj.surname,
+        skillNum: obj.skills.length
+      }
+    }
+    const workersUpdated = workers.map(transformObjects)
+    console.log(workersUpdated)
+  </script>
+</head>
+
+<body>
+
+
+</body>
+
+</html>

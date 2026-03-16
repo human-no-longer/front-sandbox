@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+
+    let clientSum = 800
+    let clientAge = 24
+    let isClientEmployed = true
+
+    const calculateCredit = (age, isEmployed = false) => {
+      if (age >= 24 && isEmployed) {
+        return 500
+      } else if (age >= 24) {
+        return 100
+      } else {
+        return 0
+      }
+    }
+
+    const canBuyMacbook = (sum, age, isEmployed = false) => calculateCredit(age, isEmployed) + sum >= 2000
+
+
+    const canBuyProduct = (productPrice, sum, age, isEmployed = false) => calculateCredit(age, isEmployed) + sum >= productPrice
+
+
+    console.log(canBuyMacbook(clientSum, clientAge, isClientEmployed))
+    console.log(canBuyProduct(1000, clientSum, clientAge, isClientEmployed))
+
+  </script>
+</head>
+
+<body>
+
+
+</body>
+
+</html>

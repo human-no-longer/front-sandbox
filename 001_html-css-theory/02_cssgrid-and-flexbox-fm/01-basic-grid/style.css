@@ -1,0 +1,38 @@
+body {
+  padding: 100px;
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+img {
+  max-width: 100%;
+}
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, auto);
+  gap: 1rem 2rem;
+}
+
+figure {
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  column-gap: 1rem;
+  align-items: center;
+  outline: 1px dotted blue;
+}
+
+figure:nth-child(3) {
+  grid-column: 1/2;
+  grid-row: 1/4;
+  display: block;
+}
+
+figcaption {
+  outline: 1px dashed green;
+}

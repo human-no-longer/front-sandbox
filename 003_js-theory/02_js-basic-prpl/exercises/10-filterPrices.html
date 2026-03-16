@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    const prices = [[100, 200], [120, 100], [200, 350]]
+    const filteredPrices = prices
+      .map(item => item[1] - item[0])
+      .filter(item => item > 0)
+    console.log(filteredPrices)
+  </script>
+</head>
+
+<body>
+
+
+</body>
+
+</html>

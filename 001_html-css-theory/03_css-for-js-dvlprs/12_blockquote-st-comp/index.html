@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Smthn</title>
+  <script src="vendor/react.development.js"></script>
+  <script src="vendor/react-dom.development.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/styled-components/6.1.14/styled-components.min.js" integrity="sha512-jtbJgyPBA54qfG43uTmT0BccCL7AlaMR/GX+DauKRshhHolaDB1iH1t1XxURQAAgc81B2R/zwgcVr/rnqgsF5Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="vendor/babel.min.js"></script>
+</head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+  <script type="text/babel">
+    const container = document.getElementById('root')
+    const root = ReactDOM.createRoot(container)
+    root.render(<App />)
+
+    function App() {
+      return (
+        <Quote by="Bill Gates" source="#">Bla Bla Bla Bla Bla BlaBla Bla BlaBla Bla BlaBla Bla Bla</Quote>
+      )
+    }
+
+    const Quote = ({ by, source, children }) => {
+      return (
+        <figure style={{ maxWidth: "300px" }}>
+          <QuoteContent>{children}</QuoteContent>
+          <figcaption>
+            <Author>
+              <SourceLink href={source}>{by}</SourceLink>
+            </Author>
+          </figcaption>
+        </figure>
+      )
+    }
+
+    const QuoteContent = styled.blockquote`
+      max-width: 300px;
+      margin: 0;
+      padding: 16px 20px;
+      font-style: italic;
+      background-color: lightgrey;
+      border-radius: 8px;
+
+      &::before {
+        content: '"'
+      }
+
+      &::after {
+        content: '"'
+      }
+    `
+
+    const Author = styled.cite`
+      display: block;
+      margin-top: 8px;
+      text-align: right;
+    `
+
+    const SourceLink = styled.a`
+      text-decoration: none;
+      color: darkgrey;
+
+      &::before {
+        content: '🐘--'
+      }
+
+      &::after {
+        content: '--🐘'
+      }
+    `
+  </script>
+</body>
+
+</html>

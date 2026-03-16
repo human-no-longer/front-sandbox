@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    const arr = [2, 4, 4, 8, 10]
+
+    const some = (arr, el) => {
+      for (const item of arr) {
+        if (item === el) {
+          return true
+          break
+        }
+      }
+      return false
+    }
+
+    const some1 = (arr, el) => arr.filter((item) => item === el).length === 0 ? false : true
+    const some2 = (arr, el) => arr.find((item) => item === el) ? true : false
+
+
+    console.log(some(arr, 10))
+    console.log(some1(arr, 10))
+    console.log(some2(arr, 0))
+  </script>
+</head>
+
+<body>
+
+
+</body>
+
+</html>

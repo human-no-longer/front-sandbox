@@ -1,0 +1,32 @@
+@use "../util/" as u;
+
+.header {
+  padding-block: u.rem(32) u.rem(64);
+  color: var(--color-white);
+  background-color: var(--color-dk-purple);
+
+  @include u.breakpoint(large) {
+    padding-block: u.rem(56);
+  }
+}
+
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-link {
+  color: var(--color-white);
+  transition: color 0.2s ease-in-out;
+
+  @include u.underline-text;
+
+  &:hover {
+    color: var(--color-green);
+  }
+}
+
+.logo {
+  width: u.rem(96);
+}

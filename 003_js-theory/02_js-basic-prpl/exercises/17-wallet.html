@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+
+    const wallet = {
+      balance: 0,
+      operations: [],
+      updateBalance: function (reason, sum) {
+        if (this.balance + sum < 0) {
+          return false
+        }
+        this.balance += sum
+        this.operations.push({
+          reason,
+          sum
+        })
+      },
+      countOperations() {
+        return this.operations.length
+      }
+    }
+    wallet.updateBalance('Нашел сотку на улице', 100)
+    wallet.updateBalance('Пропил в КБ', -50)
+    wallet.updateBalance('Пропил еще в КБ', -150) // nope
+    wallet.updateBalance('Выиграл в лотерею', 1000)
+    console.log(wallet)
+    console.log(wallet.countOperations())
+
+  </script>
+</head>
+
+<body>
+
+
+</body>
+
+</html>

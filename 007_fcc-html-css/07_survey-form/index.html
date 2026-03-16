@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Survey Form</title>
+</head>
+
+<body>
+  <h1 id="title">Survey Form</h1>
+  <p id="description">Fill out the form to apply for a job</p>
+  <form action="index.html" id="survey-form">
+    <div>
+      <label for="name" id="name-label">Your Name:</label>
+      <input id="name" type="text" name="name" placeholder="Bubba" required>
+    </div>
+    <div>
+      <label for="email" id="email-label">Your Email:</label>
+      <input id="email" type="email" name="email" placeholder="example@example.net" required>
+    </div>
+    <div>
+      <label for="number" id="number-label">Your Age:</label>
+      <input id="number" type="number" name="age" min="18" max="70" placeholder="18" required>
+    </div>
+    <div>
+      <p for="dropdown">Will you take time off</p>
+      <select name="time-off" id="dropdown">
+        <option value="always">Maybe</option>
+        <option value="lies">Never</option>
+      </select>
+    </div>
+    <div>
+      <p>Are you ready to work tomorrow?</p>
+      <label><input type="radio" name="work" value="yes" checked>Yes</label>
+      <label><input type="radio" name="work" value="no">No</label>
+    </div>
+    <div>
+      <p>Bad habits</p>
+      <label>Smoking <input type="checkbox" name="habits" value="smoking"></label>
+      <label>Alcohol <input type="checkbox" name="habits" value="drinking"></label>
+    </div>
+    <div>
+      <p>Do you have something to add?</p>
+      <textarea name="comments" id="comments"></textarea>
+    </div>
+    <button type="submit" id="submit">Submit</button>
+  </form>
+</body>
+
+</html>

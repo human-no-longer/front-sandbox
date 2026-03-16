@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    const arr = [2, 4, 8, 10]
+    const sum = arr
+      .reduce((prev, current, i) => {
+        if (i < arr.length - 1) {
+          return prev + current
+        } else {
+          return (prev + current) / arr.length
+        }
+      }, 0)
+
+    console.log(sum)
+  </script>
+</head>
+
+<body>
+
+
+</body>
+
+</html>

@@ -1,0 +1,102 @@
+@use "util" as u;
+
+:root {
+  --c-white: #fffdfa;
+  --c-blue: #00001a;
+  --c-gray: #5e607a;
+  --c-red: #f15d51;
+  --c-silver: #c5c6ce;
+  --c-yellow: #e9aa52;
+  // https://royalfig.github.io/fluid-typography-calculator/
+  // min: 40px, max: 56px, minVw: 375px, maxVw: 1440px
+  --f-xl: #{clamp(u.rem(40), 2.147887323943662rem + 1.5023474178403755vw, u.rem(56))};
+  --f-l: #{clamp(u.rem(32), 1.823943661971831rem + 0.7511737089201878vw, u.rem(40))};
+  --f-m: #{u.rem(32)};
+  --f-s: #{u.rem(20)};
+  --f-xs: #{u.rem(18)};
+  --f-body: #{u.rem(15)};
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding-block-end: u.rem(64);
+  font-family: "Inter", sans-serif;
+  font-size: var(--f-body);
+  line-height: 1.7;
+  color: var(--c-gray);
+}
+
+h1,
+h2,
+h3 {
+  color: var(--c-blue);
+  line-height: 1.1;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  transition: 150ms ease-in-out;
+  transition-property: color, background-color;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.btn-reset {
+  padding: 0;
+  background: none;
+  border: none;
+}
+
+.wrapper {
+  width: min(u.rem(1110), calc(100% - u.rem(32))); // 16px-padding on small viewports
+  margin-inline: auto;
+}
+
+.grid {
+  display: grid;
+  gap: u.rem(64);
+
+  @media (width >= u.em(1110)) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: u.rem(300) auto auto;
+    gap: u.rem(30);
+  }
+}
+
+.noscroll {
+  overflow-y: hidden;
+}
+
+.visually-hidden {
+  position: fixed;
+  transform: scale(0);
+}

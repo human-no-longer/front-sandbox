@@ -1,0 +1,18 @@
+.about-hero {
+  padding-block: 88px;
+  background-color: var(--white);
+}
+
+.about-hero__content {
+  padding-inline: 48px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.about-hero__title {
+  margin-block: 0;
+  max-width: 704px;
+}

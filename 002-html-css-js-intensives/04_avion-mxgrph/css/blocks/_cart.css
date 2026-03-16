@@ -1,0 +1,142 @@
+.cart {
+  padding-block: 84px;
+  background-color: var(--light-grey);
+}
+
+.cart__content {
+  padding-block: 72px 54px;
+  padding-inline: 62px;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--white);
+}
+
+.cart__header {
+  margin-bottom: 28px;
+  padding-bottom: 16px;
+}
+
+.cart__products {
+  padding-block: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  border-top: 1px solid var(--light-grey);
+  border-bottom: 1px solid var(--light-grey);
+}
+
+.cart__row {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  column-gap: 7px;
+}
+
+.cart__col_product {
+  grid-column: span 6;
+}
+
+.cart__col_quantity {
+  grid-column: span 2;
+  display: flex;
+  justify-content: center;
+}
+
+.cart__col_total {
+  grid-column: span 2;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.cart__col_img {
+  grid-column: span 1;
+}
+
+.cart__item-img {
+  display: block;
+}
+
+.cart__col_info {
+  padding-left: 17px;
+  grid-column: span 5;
+  display: flex;
+  align-items: center;
+}
+
+.cart__row_product .cart__col_quantity,
+.cart__row_product .cart__col_total {
+  padding-top: 12px;
+}
+
+.cart__row_header .cart__col {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4;
+  color: var(--dark-primary);
+}
+
+.cart__item {
+  max-width: 235px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-weight: 400;
+  color: var(--dark-primary);
+}
+
+.cart__item-title {
+  margin-block: 0;
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.cart__item-descr {
+  margin-block: 0;
+  font-size: 16px;
+}
+
+.cart__item-descr {
+  font-size: 16px;
+}
+
+.cart__stepper {
+  width: 122px;
+}
+
+.cart__col_total {
+  font-weight: 400;
+  font-size: 18px;
+  color: var(--dark-primary);
+}
+
+.cart__footer {
+  padding-block: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cart__footer-text {
+  font-size: 14px;
+  color: var(--primary);
+}
+
+.cart__footer-total {
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+  font-family: var(--second-family);
+  font-size: 20px;
+  line-height: 1.4;
+  text-align: right;
+  color: var(--primary);
+}
+
+.cart__footer-sum {
+  font-size: 24px;
+  color: var(--dark-primary);
+}
+
+.cart__btn {
+  align-self: flex-end;
+}

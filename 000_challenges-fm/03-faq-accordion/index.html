@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Frontend Mentor | FAQ accordion</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      padding: 10px 0;
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(292, 16%, 49%);
+    }
+  </style>
+  <script src="js/script.js" defer></script>
+</head>
+
+<body>
+
+  <main>
+    <article class="faq">
+      <header class="faq__header">
+        <h1 class="faq__title">FAQs</h1>
+      </header>
+      <ul class="faq__list list-reset">
+        <li class="faq__item faq__item--open">
+          <button class="faq__question btn-reset" aria-expanded="true">
+            <span class="faq__question-text">What is Frontend Mentor, and how will it help me?</span>
+            <span class="faq__question-icon">
+              <img class="faq__question-img faq__question-img--minus" src="assets/images/icon-minus.svg" alt="Open icon">
+              <img class="faq__question-img faq__question-img--plus" src="assets/images/icon-plus.svg" alt="Closed icon" hidden>
+            </span>
+          </button>
+          <p class="faq__answer" aria-hidden="false" id="first">Frontend Mentor offers realistic coding challenges to help developers improve their
+            frontend coding skills with projects in HTML, CSS, and JavaScript. It's suitable for
+            all levels and ideal for portfolio building.</p>
+        </li>
+        <li class="faq__item">
+          <button class="faq__question btn-reset" aria-expanded="false">
+            <span class="faq__question-text">Is Frontend Mentor free?</span>
+            <span class="faq__question-icon">
+              <img class="faq__question-img faq__question-img--minus" src="assets/images/icon-minus.svg" alt="Open icon" hidden>
+              <img class="faq__question-img faq__question-img--plus" src="assets/images/icon-plus.svg" alt="Closed icon">
+            </span>
+          </button>
+          <p class="faq__answer" aria-hidden="true">Yes, Frontend Mentor offers both free and premium coding challenges, with the free
+            option providing access to a range of projects suitable for all skill levels.</p>
+        </li>
+        <li class="faq__item">
+          <button class="faq__question btn-reset" aria-expanded="false">
+            <span class="faq__question-text">Can I use Frontend Mentor projects in my portfolio?</span>
+            <span class="faq__question-icon">
+              <img class="faq__question-img faq__question-img--minus" src="assets/images/icon-minus.svg" alt="Open icon" hidden>
+              <img class="faq__question-img faq__question-img--plus" src="assets/images/icon-plus.svg" alt="Closed icon">
+            </span>
+          </button>
+          <p class="faq__answer" aria-hidden="true">Yes, you can use projects completed on Frontend Mentor in your portfolio. It's an excellent
+            way to showcase your skills to potential employers!</p>
+        </li>
+        <li class="faq__item">
+          <button class="faq__question btn-reset" aria-expanded="false">
+            <span class="faq__question-text">How can I get help if I'm stuck on a challenge?</span>
+            <span class="faq__question-icon">
+              <img class="faq__question-img faq__question-img--minus" src="assets/images/icon-minus.svg" alt="Open icon" hidden>
+              <img class="faq__question-img faq__question-img--plus" src="assets/images/icon-plus.svg" alt="Closed icon">
+            </span>
+          </button>
+          <p class="faq__answer" aria-hidden="true">The best place to get help is inside Frontend Mentor's Discord community. There's a help
+            channel where you can ask questions and seek support from other community members.</p>
+        </li>
+      </ul>
+    </article>
+  </main>
+
+
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://github.com/chlvk">chlvk👀</a>.
+    </div>
+  </footer>
+
+  <script src=""></script>
+</body>
+
+</html>

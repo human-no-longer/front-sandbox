@@ -1,0 +1,37 @@
+@use "../util/" as u;
+
+.footer {
+  padding-block-end: u.rem(64);
+
+  @include u.breakpoint(medium) {
+    padding-block-end: u.rem(120);
+  }
+}
+
+.footer-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 58px;
+}
+
+.footer-logo img {
+  transition: opacity 250ms ease-in-out;
+}
+
+.footer-logo:hover img {
+  opacity: 0.8;
+}
+
+.footer-links {
+  display: flex;
+  gap: u.rem(28);
+}
+
+.footer-link:hover path {
+  fill: var(--color-dk-purple);
+}
+
+.footer-icon path {
+  transition: fill 250ms ease-in-out;
+}

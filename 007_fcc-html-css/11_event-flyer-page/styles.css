@@ -1,0 +1,29 @@
+:root {
+  background-color: azure;
+}
+
+body {
+  width: 60vw;
+  min-height: calc(100vh - 50px * 2);
+  margin: 0 auto;
+  padding: 50px 25px;
+  background-color: blanchedalmond;
+}
+
+header,
+footer {
+  text-align: center;
+}
+
+header img {
+  max-width: 100%;
+}
+
+hr,
+section {
+  width: 95%;
+}
+
+section {
+  margin-inline: auto;
+}

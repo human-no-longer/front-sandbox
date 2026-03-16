@@ -1,0 +1,42 @@
+@import 'base.css';
+@import 'product.css';
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: var(--gutter)
+}
+
+.filters {
+  position: relative;
+  grid-column: span 1;
+}
+
+.filter-price__input {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid gray;
+}
+
+.absolute {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.fixed {
+  position: fixed;
+  top: var(--gutter);
+  left: 0;
+}
+
+.product-grid {
+  grid-column: span 3;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--gutter);
+}
+
+.fake-height {
+  height: 3000px;
+}

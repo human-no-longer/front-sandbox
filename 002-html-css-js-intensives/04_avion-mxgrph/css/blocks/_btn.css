@@ -1,0 +1,30 @@
+.btn {
+  padding: 16px 32px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  transition: var(--main-trs);
+}
+
+.btn_theme_dark {
+  color: var(--white);
+  background-color: rgba(249, 249, 249, 0.15);
+}
+
+.btn_theme_light {
+  color: var(--dark-primary);
+  background-color: var(--light-grey)
+}
+
+.btn_theme_white {
+  color: var(--dark-primary);
+  background-color: var(--white)
+}
+
+.btn_theme_extra-dark {
+  color: var(--white);
+  background-color: var(--dark-primary)
+}

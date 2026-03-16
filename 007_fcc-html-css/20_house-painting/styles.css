@@ -1,0 +1,98 @@
+html {
+  box-sizing: border-box;
+  filter: grayscale(100%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  background-image: linear-gradient(hsl(210, 63%, 59%) 60%, hsl(47, 75%, 78%) 60%);
+}
+
+#house {
+  position: relative;
+  width: 500px;
+  height: 400px;
+  background-color: burlywood;
+  border: 2px solid crimson;
+}
+
+#house>div {
+  position: absolute;
+}
+
+#chimney {
+  top: -25px;
+  left: 200px;
+  z-index: -1;
+  width: 30px;
+  height: 25px;
+  background-color: black;
+  border: 2px solid black;
+}
+
+#roof {
+  top: 0;
+  left: -50px;
+  width: 600px;
+  height: 102px;
+  margin-top: -2px;
+  background-color: crimson;
+  border: 2px solid brown;
+}
+
+#window-1,
+#window-2 {
+  top: 150px;
+  width: 100px;
+  height: 150px;
+  background-color: aqua;
+  border: 2px solid crimson;
+}
+
+#window-1::before,
+#window-2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: calc(50% - 1px);
+  width: 2px;
+  height: 146px;
+  background-color: crimson;
+}
+
+#window-1 {
+  left: 40px;
+}
+
+#window-2 {
+  left: 180px;
+}
+
+#door {
+  bottom: 0;
+  right: 40px;
+  width: 120px;
+  height: 200px;
+  margin-bottom: -2px;
+  background-color: brown;
+  border: 2px solid darkred;
+}
+
+#door::before {
+  content: "";
+  position: absolute;
+  top: calc(50% - 2px);
+  right: 5px;
+  width: 10px;
+  height: 10px;
+  background-color: yellowgreen;
+  border-radius: 50%;
+}

@@ -1,0 +1,48 @@
+body {
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  background-color: black;
+}
+img {
+  max-width: 100%;
+}
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+.grid-container {
+  margin-inline: auto;
+  width: 980px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: repeat(4, auto);
+  gap: 1rem;
+  outline: 1px dashed white;
+}
+
+/* 1  shows column number, span shows element length  */
+img:nth-child(1) {
+  grid-column: 1 / span 2;
+}
+
+img:nth-child(2) {
+  grid-column: 1;
+  grid-row: 2 / span 2;
+}
+
+img:nth-child(3) {
+  grid-column: 1 / span 2;
+  grid-row: 4;
+}
+
+img:nth-child(4) {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+img:nth-child(5) {
+  grid-column: 2;
+  grid-row: 3;
+}
